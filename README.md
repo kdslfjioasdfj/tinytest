@@ -27,8 +27,8 @@ cd tinytest
 2. Building **TinyTest**
 
 ```bash
-cmake -B build
-cmake --build build
+premake5 ninja
+ninja
 ```
 
 3. Reading the documentation
