@@ -24,3 +24,9 @@
   1. `int cond`: The condition to evaluate. `0` is considered false, everything else is considered as true.
 - Returns: _No value (`void`)._
 - Notes: This function does crash the test program on failure (when `int cond` is false).
+
+## Compatibility Notes
+
+### Shared/Dynamic Library vs Static Library Usage
+
+If you are building a _shared/dynamic_ library (using `premake5 <system> --shared`), `TINYTEST_CONFIG_SHARED` must be defined. Otherwise, there may be _linker errors_.
